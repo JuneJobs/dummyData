@@ -11,62 +11,64 @@
 
 const dbApiMockMsg = {
     //SDP:SGU-REQ/RSP
-    sgu: {
-        req: {
-            //정상동작
-            case1: {
-                "header": {
-                    "msgType": 171,
-                    "msgLen": 0,
-                    "endpointId": 24
+    sdp: {
+        sgu: {
+            req: {
+                //정상동작
+                case1: {
+                    "header": {
+                        "msgType": 171,
+                        "msgLen": 0,
+                        "endpointId": 24
+                    },
+                    "payload": {
+                        "userId": "wptjd6141",
+                        "clientType": 2
+                    }
                 },
-                "payload": {
-                    "userId": "wptjd6141",
-                    "clientType": 2
+                //회원아이디 중복 에러
+                case2: {
+                    "header": {
+                        "msgType": 171,
+                        "msgLen": 0,
+                        "endpointId": 40
+                    },
+                    "payload": {
+                        "userId": "J3SUNG",
+                        "clientType": 2
+                    }
                 }
             },
-            //회원아이디 중복 에러
-            case2: {
-                "header": {
-                    "msgType": 171,
-                    "msgLen": 0,
-                    "endpointId": 40
+            rsp: {
+                case1: {
+                    "header": {
+                        "msgType": 172,
+                        "msgLen": 0,
+                        "endpointId": 24
+                    },
+                    "payload": {
+                        "resultCode": 0
+                    }
                 },
-                "payload": {
-                    "userId": "J3SUNG",
-                    "clientType": 2
+                case2: {
+                    "header": {
+                        "msgType": 172,
+                        "msgLen": 0,
+                        "endpointId": 40
+                    },
+                    "payload": {
+                        "resultCode": 2
+                    }
                 }
             }
         },
-        rsp: {
-            case1: {
-                "header": {
-                    "msgType": 172,
-                    "msgLen": 0,
-                    "endpointId": 24
-                },
-                "payload": {
-                    "resultCode": 0
-                }
-            },
-            case2: {
-                "header": {
-                    "msgType": 172,
-                    "msgLen": 0,
-                    "endpointId": 40
-                },
-                "payload": {
-                    "resultCode": 2
-                }
-            }
-        }
-    },
-
-    //SDP: UVC-REQ/RSP
-    uvc: {
-
-    } 
-    //...
+    
+        //SDP: UVC-REQ/RSP
+        uvc: {
+    
+        } 
+        //...
+    }
 }
 
 
@@ -80,13 +82,13 @@ const dbApiMockMsg = {
 
     }
     switch(req.body) {
-        case dbApiMockMsg.sgu.case1.req:
-            return res.send(dbApiMockMsg.sgu.case1.rsp);
-        case dbApiMockMsg.sgu.case2.req:
-            return res.send(dbApiMockMsg.sgu.case2.rsp);
-        case dbApiMockMsg.uvc.case1.req:
-            return res.send(dbApiMockMsg.uvc.case1.rsp);
-        case dbApiMockMsg.uvc.case2.req:
-            return res.send(dbApiMockMsg.uvc.case2.rsp);
+        case dbApiMockMsg.sdp.sgu.req.case1:
+            return res.send(dbApiMockMsg.sdp.sgu.rsp.case1);
+        case dbApiMockMsg.sdp.sgu.req.case2:
+            return res.send(dbApiMockMsg.sdp.sgu.rsp.case2);
+        case dbApiMockMsg.sdp.uvc.req.case2:
+            return res.send(dbApiMockMsg.sdp.uvc.rsp.case2);
+        case dbApiMockMsg.sdp.sgu.req.case2:
+            return res.send(dbApiMockMsg.sdp.uvc.rsp.case2);
     }
  });
