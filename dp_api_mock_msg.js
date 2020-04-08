@@ -76,6 +76,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 172,
@@ -86,6 +87,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //회원탈퇴한 ID
                 case2: {
                     "header": {
                         "msgType": 172,
@@ -96,6 +98,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //처리되지 않은 에러
                 case3: {
                     "header": {
                         "msgType": 172,
@@ -106,6 +109,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //conflict of Temporary Client ID
                 case4: {
                     "header": {
                         "msgType": 172,
@@ -116,6 +120,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //중복 사례
                 case5: {
                     "header": {
                         "msgType": 172,
@@ -219,6 +224,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 174,
@@ -229,6 +235,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //처리되지 않은 에러
                 case2: {
                     "header": {
                         "msgType": 174,
@@ -239,6 +246,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //중복 ID
                 case3: {
                     "header": {
                         "msgType": 174,
@@ -249,6 +257,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //reject not exist Temporary Client id
                 case4: {
                     "header": {
                         "msgType": 174,
@@ -259,6 +268,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //틀린 인증 코드
                 case5: {
                     "header": {
                         "msgType": 174,
@@ -368,6 +378,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상동작, 실버
                 case1: {
                     "header": {
                         "msgType": 176,
@@ -380,6 +391,7 @@ const dbApiMockMsg = {
                         "ml": 0
                     }
                 },
+                //정상동작, 골드
                 case2: {
                     "header": {
                         "msgType": 176,
@@ -392,6 +404,7 @@ const dbApiMockMsg = {
                         "ml":1
                     }
                 },
+                //정상동작, 플래티넘
                 case3: {
                     "header": {
                         "msgType": 176,
@@ -404,6 +417,7 @@ const dbApiMockMsg = {
                         "ml":2
                     }
                 },
+                //처리되지 않은 에러
                 case4: {
                     "header": {
                         "msgType": 172,
@@ -414,6 +428,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //conflict of Temporary Client ID
                 case5: {
                     "header": {
                         "msgType": 172,
@@ -424,6 +439,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 }, 
+                //없는 ID
                 case6: {
                     "header": {
                         "msgType": 176,
@@ -434,6 +450,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //패스워드 오류
                 case7: {
                     "header": {
                         "msgType": 176,
@@ -496,6 +513,7 @@ const dbApiMockMsg = {
                 }
             },
             ack: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 178,
@@ -506,6 +524,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //처리되지 않은 에러
                 case2: {
                     "header": {
                         "msgType": 178,
@@ -516,6 +535,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //할당되지 않은 유저 시퀀스 넘버
                 case3: {
                     "header": {
                         "msgType": 178,
@@ -526,6 +546,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //로그인 실패 중첩
                 case4: {
                     "header": {
                         "msgType": 178,
@@ -609,6 +630,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 180,
@@ -619,6 +641,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //처리되지 않은 에러
                 case2: {
                     "header": {
                         "msgType": 180,
@@ -629,6 +652,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //할당 되지 않은 유저 시퀀스 넘버
                 case3: {
                     "header": {
                         "msgType": 180,
@@ -639,6 +663,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //nsc 오류
                 case4: {
                     "header": {
                         "msgType": 180,
@@ -649,6 +674,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //비밀번호 틀림
                 case5: {
                     "header": {
                         "msgType": 180,
@@ -742,6 +768,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 182,
@@ -753,6 +780,7 @@ const dbApiMockMsg = {
                         "userPw": "G43A2O71"
                     }
                 },
+                //처리되지 않은 에러
                 case2: {
                     "header": {
                         "msgType": 182,
@@ -763,6 +791,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //conflict of Temporary Client ID
                 case3: {
                     "header": {
                         "msgType": 182,
@@ -773,6 +802,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //틀린정보
                 case4: {
                     "header": {
                         "msgType": 182,
@@ -783,6 +813,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //아이디가 존재하지 않음
                 case5: {
                     "header": {
                         "msgType": 182,
@@ -856,6 +887,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 184,
@@ -866,6 +898,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //처리되지 않은 에러
                 case2: {
                     "header": {
                         "msgType": 184,
@@ -876,6 +909,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //할당 되지 않은 유저 시퀀스 넘버
                 case3: {
                     "header": {
                         "msgType": 184,
@@ -886,6 +920,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //nsc 오류
                 case4: {
                     "header": {
                         "msgType": 184,
@@ -896,6 +931,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //비밀번호 틀림
                 case5: {
                     "header": {
                         "msgType": 184,
@@ -1051,6 +1087,7 @@ const dbApiMockMsg = {
 
             },
             rsp: {
+                //정상동작, 파라미터1
                 case1: {
                     "header": {
                         "msgType": 186,
@@ -1064,6 +1101,7 @@ const dbApiMockMsg = {
                         ]
                     }
                 },
+                //정상동작, 파라미터2
                 case2:{
                     "header": {
                         "msgType": 186,
@@ -1080,6 +1118,7 @@ const dbApiMockMsg = {
                         ]
                     }
                 },
+                //정상동작, 파라미터3
                 case3: {
                     "header": {
                         "msgType": 186,
@@ -1093,6 +1132,7 @@ const dbApiMockMsg = {
                         ]
                     }
                 },
+                //정상동작, 파라미터4
                 case4: {
                     "header": {
                         "msgType": 186,
@@ -1108,6 +1148,7 @@ const dbApiMockMsg = {
                         ]
                     }
                 },
+                //처리되지 않은 에러
                 case5: {
                     "header": {
                         "msgType": 186,
@@ -1118,6 +1159,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //할당되지 않은 유저 시퀀스 넘버
                 case6: {
                     "header": {
                         "msgType": 186,
@@ -1128,6 +1170,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //nsc 오류
                 case7: {
                     "header": {
                         "msgType": 186,
@@ -1138,6 +1181,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //인증되지 않은 유저 시퀀스 넘버
                 case8: {
                     "header": {
                         "msgType": 186,
@@ -1219,6 +1263,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 188,
@@ -1229,6 +1274,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //처리되지 않은 에러
                 case2: {
                     "header": {
                         "msgType": 188,
@@ -1239,6 +1285,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //할당 되지 않읂 유저 시퀀스 넘버
                 case3: {
                     "header": {
                         "msgType": 188,
@@ -1249,6 +1296,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //nsc 오류
                 case4: {
                     "header": {
                         "msgType": 188,
@@ -1259,6 +1307,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //인증 되지 않은 유저 시퀀스 넘버
                 case5: {
                     "header": {
                         "msgType": 188,
@@ -1446,6 +1495,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //not defined
                 case1: {
                     "header": {
                         "msgType": 190,
@@ -1456,6 +1506,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //will be handed over to other users
                 case2: {
                     "header": {
                         "msgType": 190,
@@ -1466,6 +1517,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //sensor is broken
                 case3: {
                     "header": {
                         "msgType": 190,
@@ -1476,6 +1528,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //sensor is stolen
                 case4: {
                     "header": {
                         "msgType": 190,
@@ -1486,6 +1539,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //sensor will not be used
                 case5: {
                     "header": {
                         "msgType": 190,
@@ -1496,6 +1550,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //incorrect information was provided in registering a sensor
                 case6: {
                     "header": {
                         "msgType": 190,
@@ -1506,6 +1561,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //처리되지 않은 에러
                 case7: {
                     "header": {
                         "msgType": 190,
@@ -1516,6 +1572,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //할당 되지 않은 유저 시퀀스 넘버
                 case8: {
                     "header": {
                         "msgType": 190,
@@ -1526,6 +1583,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //nsc 오류
                 case9: {
                     "header": {
                         "msgType": 190,
@@ -1536,6 +1594,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //인증되지 않은 유저 시퀀스 넘버
                 case10: {
                     "header": {
                         "msgType": 190,
@@ -1546,6 +1605,7 @@ const dbApiMockMsg = {
                         "resultCode": 3
                     }
                 },
+                //not exist wifi mac addr
                 case11: {
                     "header": {
                         "msgType": 190,
@@ -1556,6 +1616,7 @@ const dbApiMockMsg = {
                         "resultCode": 4
                     }
                 },
+                //not exist user id
                 case12: {
                     "header": {
                         "msgType": 190,
@@ -1566,6 +1627,7 @@ const dbApiMockMsg = {
                         "resultCode": 5
                     }
                 },
+                //wifi mac과 user id가 일치하지않다
                 case13: {
                     "header": {
                         "msgType": 190,
@@ -1659,6 +1721,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 192,
@@ -1672,6 +1735,7 @@ const dbApiMockMsg = {
                         ]
                     }
                 },
+                //처리되지 않은 에러
                 case2: {
                     "header": {
                         "msgType": 192,
@@ -1682,6 +1746,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //할당되지 않은 유저 시퀀스 넘버
                 case3: {
                     "header": {
                         "msgType": 192,
@@ -1692,6 +1757,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //nsc 오류
                 case4: {
                     "header": {
                         "msgType": 192,
@@ -1702,6 +1768,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //인증되지 않은 유저 시퀀스 넘버
                 case5: {
                     "header": {
                         "msgType": 192,
@@ -1772,6 +1839,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 194,
@@ -1782,6 +1850,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //처리되지 않은 에러
                 case2: {
                     "header": {
                         "msgType": 194,
@@ -1792,6 +1861,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //할당 되지 않은 유저 시퀀스 넘버
                 case3: {
                     "header": {
                         "msgType": 194,
@@ -1802,6 +1872,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //nsc오류
                 case4: {
                     "header": {
                         "msgType": 194,
@@ -1911,6 +1982,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 196,
@@ -1921,6 +1993,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //처리되지 않은 에러
                 case2: {
                     "header": {
                         "msgType": 196,
@@ -1931,6 +2004,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //할당 되지 않은 유저 시퀀스 넘버
                 case3: {
                     "header": {
                         "msgType": 196,
@@ -1941,6 +2015,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //nsc오류
                 case4: {
                     "header": {
                         "msgType": 196,
@@ -1951,6 +2026,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //not exist wifi mac
                 case5: 
                 {
                     "header": {
@@ -1962,6 +2038,7 @@ const dbApiMockMsg = {
                         "resultCode": 3
                     }
                 },
+                //이미 연결되어 있음
                 case6: {
                     "header": {
                         "msgType": 196,
@@ -1972,6 +2049,7 @@ const dbApiMockMsg = {
                         "resultCode": 4
                     }
                 },
+                //이미 다른곳과 연결중
                 case7: {
                     "header": {
                         "msgType": 196,
@@ -2133,6 +2211,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 198,
@@ -2143,6 +2222,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //다른 유저에게 센서 양도
                 case2: {
                     "header": {
                         "msgType": 198,
@@ -2153,6 +2233,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //센서가 부서짐
                 case3: {
                     "header": {
                         "msgType": 198,
@@ -2163,6 +2244,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //센서가 사라짐
                 case4: {
                     "header": {
                         "msgType": 198,
@@ -2173,6 +2255,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //이 센서를 사용하지 않을 예정
                 case5: {
                     "header": {
                         "msgType": 198,
@@ -2183,6 +2266,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //센서 등록시 잘못된 정보가 있었음
                 case6: {
                     "header": {
                         "msgType": 198,
@@ -2193,6 +2277,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //처리되지 않은 에러
                 case7: {
                     "header": {
                         "msgType": 198,
@@ -2203,6 +2288,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //할당받지 않은 유저 시퀀스 넘버
                 case8: {
                     "header": {
                         "msgType": 198,
@@ -2213,6 +2299,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //nsc 오류
                 case9: {
                     "header": {
                         "msgType": 198,
@@ -2223,6 +2310,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //not exist wifi mac
                 case10: {
                     "header": {
                         "msgType": 198,
@@ -2233,6 +2321,7 @@ const dbApiMockMsg = {
                         "resultCode": 3
                     }
                 },
+                //유저 넘버와 wifi mac이 연결되어 있지 않음 
                 case11: {
                     "header": {
                         "msgType": 198,
@@ -2295,6 +2384,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 200,
@@ -2308,6 +2398,7 @@ const dbApiMockMsg = {
                         ]
                     }
                 },
+                //처리되지 않은 에러
                 case2: {
                     "header": {
                         "msgType": 200,
@@ -2318,6 +2409,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //할당되지 않은 유저 시퀀스 넘버
                 case3: {
                     "header": {
                         "msgType": 200,
@@ -2328,6 +2420,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //nsc 오류
                 case4: {
                     "header": {
                         "msgType": 200,
@@ -2404,6 +2497,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 202,
@@ -2415,6 +2509,7 @@ const dbApiMockMsg = {
                         "ssn": 0001
                     }
                 },
+                //처리되지 않은 에러
                 case2: {
                     "header": {
                         "msgType": 202,
@@ -2425,6 +2520,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //conflict of Temporary Sensor ID
                 case3: {
                     "header": {
                         "msgType": 202,
@@ -2436,6 +2532,7 @@ const dbApiMockMsg = {
                         "ssn": 0001
                     }
                 },
+                //not exist wifi mac
                 case4: {
                     "header": {
                         "msgType": 202,
@@ -2446,6 +2543,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //사용자와 관련된 센서가 아님
                 case5: {
                     "header": {
                         "msgType": 202,
@@ -2524,6 +2622,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 204,
@@ -2536,6 +2635,7 @@ const dbApiMockMsg = {
                         "mobf": 0
                     }
                 },
+                //처리되지 않은 에러
                 case2: {
                     "header": {
                         "msgType": 204,
@@ -2546,6 +2646,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //할당되지 않은 센서 시퀀스 넘버
                 case3: {
                     "header": {
                         "msgType": 204,
@@ -2556,6 +2657,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //GPS 에러
                 case4: {
                     "header": {
                         "msgType": 204,
@@ -2566,6 +2668,7 @@ const dbApiMockMsg = {
                         "resultCode": 3
                     }
                 },
+                //사용자와 관련된 센서가 아님
                 case5: {
                     "header": {
                         "msgType": 204,
@@ -2617,6 +2720,7 @@ const dbApiMockMsg = {
                 }
             },
             ack: {
+                //정상동작
                 case1: {
                     "header": {
                         "msgType": 206,
@@ -2627,6 +2731,7 @@ const dbApiMockMsg = {
                         "resultCode": 0
                     }
                 },
+                //warning-other
                 case2: {
                     "header": {
                         "msgType": 206,
@@ -2637,6 +2742,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //할당되지 않은 센서 시퀀스 넘버
                 case3: {
                     "header": {
                         "msgType": 206,
@@ -2760,6 +2866,7 @@ const dbApiMockMsg = {
                 }
             },
             ack: {
+                //연속으로 수신 완료
                 case1: {
                     "header": {
                         "msgType": 208,
@@ -2782,6 +2889,7 @@ const dbApiMockMsg = {
                         ]
                     }
                 },
+                //1개 누락
                 case2: {
                     "header": {
                         "msgType": 208,
@@ -2804,6 +2912,7 @@ const dbApiMockMsg = {
                         ]
                     }
                 },
+                //2개 연속 누락
                 case3: {
                     "header": {
                         "msgType": 208,
@@ -2826,6 +2935,7 @@ const dbApiMockMsg = {
                         ]
                     }
                 },
+                //2개 각각 누락
                 case4: {
                     "header": {
                         "msgType": 208,
@@ -2848,6 +2958,7 @@ const dbApiMockMsg = {
                         ]
                     }
                 }, 
+                //3개연속 누락
                 case5: {
                     "header": {
                         "msgType": 208,
@@ -2981,6 +3092,7 @@ const dbApiMockMsg = {
                 }
             },
             rsp: {
+                //정상 동작
                 case1: {
                     "header": {
                         "msgType": 212,
@@ -2997,6 +3109,7 @@ const dbApiMockMsg = {
                         ]
                     }
                 },
+                //정상 동작
                 case2: {
                     "header": {
                         "msgType": 212,
@@ -3014,6 +3127,7 @@ const dbApiMockMsg = {
                         ]
                     }
                 },
+                //정상 동작
                 case3: {
                     "header": {
                         "msgType": 212,
@@ -3031,6 +3145,7 @@ const dbApiMockMsg = {
                         ]
                     }
                 },
+                //처리되지 않은 에러
                 case4: {
                     "header": {
                         "msgType": 212,
@@ -3041,6 +3156,7 @@ const dbApiMockMsg = {
                         "resultCode": 1
                     }
                 },
+                //할당되지 않은 시퀀스 넘버
                 case5: {
                     "header": {
                         "msgType": 212,
@@ -3051,6 +3167,7 @@ const dbApiMockMsg = {
                         "resultCode": 2
                     }
                 },
+                //nsc 오류
                 case6: {
                     "header": {
                         "msgType": 212,
@@ -3067,6 +3184,7 @@ const dbApiMockMsg = {
                         ]
                     }
                 },
+                //인증되지 않은 시퀀스 넘버
                 case7: {
                     "header": {
                         "msgType": 212,
@@ -3077,6 +3195,7 @@ const dbApiMockMsg = {
                         "resultCode": 3
                     }
                 },
+                //해당 조건에서 센서가 존재하지 않음
                 case8: {
                     "header": {
                         "msgType": 212,
