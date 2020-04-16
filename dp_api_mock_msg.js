@@ -2983,7 +2983,119 @@ const dbApiMockMsg = {
                 }
             }
         },
-
+        //SDP: RAV-REQ/RSP
+        rav: {
+            req: {
+                //정상 동작
+                case1: {
+                    "header": {
+                        "msgType": 131,
+                        "msgLen": 0,
+                        "endpointId": 1
+                    },
+                    "payload": {
+                        "nsc": 1,
+                        "lat": 35.8451,
+                        "lng": 128.6786,
+                        "zoomLv": 1
+                    }
+                },
+                //처리되지 않은 에러
+                case2: {
+                    "header": {
+                        "msgType": 131,
+                        "msgLen": 0,
+                        "endpointId": 1
+                    },
+                    "payload": {
+                        "nsc": 1,
+                        "lat": 35.8451,
+                        "lng": 128.6786,
+                        "zoomLv": 1
+                    }
+                },
+                //할당되지 않은 시퀀스 넘버
+                case3: {
+                    "header": {
+                        "msgType": 131,
+                        "msgLen": 0,
+                        "endpointId": 99
+                    },
+                    "payload": {
+                        "nsc": 1,
+                        "lat": 35.8451,
+                        "lng": 128.6786,
+                        "zoomLv": 1
+                    }
+                },
+                //로그인 에러
+                case4: {
+                    "header": {
+                        "msgType": 131,
+                        "msgLen": 0,
+                        "endpointId": 1
+                    },
+                    "payload": {
+                        "nsc": 1,
+                        "lat": 35.8451,
+                        "lng": 128.6786,
+                        "zoomLv": 1
+                    }
+                }
+            },
+            rsp: {
+                //정상 동작
+                case1: {
+                    "header": {
+                        "msgType": 132,
+                        "msgLen": 0,
+                        "endpointId": 1
+                    },
+                    "payload": {
+                        "resultCode": 0,
+                        "resulttimeAirQualityDataList": [
+                            "4EA2C2E9B8CE,1573521998,81,25,27,63,62,85,16,35.836686,128.666118",
+                            "E6628A389613,1573521997,35,80,22,17,58,41,32,35.835112,128.678657",
+                            "BF50E9FB0142,1573521999,19,17,23,64,66,75,47,35.835986,128.665118",
+                            "498EDE145AFE,1573521997,18,84,7,66,45,50,22,35.835512,128.678757"
+                        ]
+                    }
+                },
+                //처리되지 않은 에러
+                case2: {
+                    "header": {
+                        "msgType": 132,
+                        "msgLen": 0,
+                        "endpointId": 1
+                    },
+                    "payload": {
+                        "resultCode": 1,
+                    }
+                },
+                //할당되지 않은 시퀀스 넘버
+                case3: {
+                    "header": {
+                        "msgType": 132,
+                        "msgLen": 0,
+                        "endpointId": 99
+                    },
+                    "payload": {
+                        "resultCode": 2,
+                    }
+                },
+                //로그인 에러
+                case4: {
+                    "header": {
+                        "msgType": 132,
+                        "msgLen": 0,
+                        "endpointId": 1
+                    },
+                    "payload": {
+                        "resultCode": 3,
+                    }
+                }
+            }
+        },
         //SDP: HAV-REQ/RSP
         hav: {
             req: {
